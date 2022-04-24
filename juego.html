@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Tecnico | Juego</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-items"><a href="#ranking">Ranking</a></li>
+                <li class="navbar-items"><a href="index.html">Salir</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contenedor">
+        <div class="contenedor__puntos">
+            <h2>Puntos: </h2>
+            <p id="puntaje"> 0 </p>
+         </div>
+        <div class="encabezado">
+            <div class="encabezado__categoria" id="categoria">Dificultad 1</div>
+            <div class="encabezado__pregunta" id="pregunta">¿Pregunta?</div>
+        </div>
+        <!-- opciones -->
+        <div class="botones">
+            <div class="btn" id="btn1" onclick="verificarRespuesta(0)">Opcion 1</div>
+            <div class="btn" id="btn2" onclick="verificarRespuesta(1)">Opcion 2</div>
+            <div class="btn" id="btn3" onclick="verificarRespuesta(2)">Opcion 3</div>
+            <div class="btn" id="btn4" onclick="verificarRespuesta(3)">Opcion 4</div>
+        </div>
+    </div>
+
+    <div class="puntajesMaximos" id="ranking">
+        <h2>Ranking</h2>
+        <div class="tablaPosiciones">
+            <div class="tablaPosiciones-cabecera">Nombre</div>
+            <div class="tablaPosiciones-cabecera">Puntos</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

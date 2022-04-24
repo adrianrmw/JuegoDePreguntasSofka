@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Tecnico | Log in</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="contenedor__login">
+        <div class="contenedor__titulo">
+            <h1>SOFKA<span>reto</span></h1>
+            <h3>JUEGO DE PREGUNTAS</h3>
+        </div>
+        <div class="contenedor__form">
+            <form>
+                
+                <div>
+                <input class="form-txt" type="text" id="user" placeholder="Usuario">
+                </div>
+                <div>
+                <input class="form-txt" type="password" id="pass" placeholder="Contraseña">
+                </div>
+                <label id="label-info"></label>
+            </form>
+        </div>
+        <div class="contenedor__botones">
+            <button onclick="login();">Log In</button>
+            <button onclick="registrarUsuario();">Registrarse</button>
+            <a href="juego.html" id="boton_invitado">Jugar como Invitado</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
